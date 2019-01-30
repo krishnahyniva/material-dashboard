@@ -1,13 +1,26 @@
 {
-    "name": "creativetimofficial/material-dashboard",
-    "description": "Material Dashboard - Free Bootstrap Material Design Admin",
-    "type": "project",
+    "name": "krishnahyniva/yii2-material-dashboard",
+    "description": "Material dashboard backend theme asset bundle for Yii 2.0 Framework",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","material","dashboard","admin","theme","backend","asset","css","less"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Creative Tim",
-            "email": "hello@creative-tim.com"
+    "version" : "1.0.0",
+    "authors": [{
+        "name": "Krishna",
+        "email": "krishna@hyniva.com"
+    }],
+    "require": {
+        "yiisoft/yii2": "2.*",
+        "yiisoft/yii2-bootstrap": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "krishnahyniva\\CImaterial\\": ""
         }
-    ],
-    "require": {}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
 }
