@@ -64,7 +64,7 @@ class ActionColumn extends Column
      *
      * @see buttons
      */
-    public $template = '{view} {update} {delete}';
+    public $template = '{view}  {update}  {delete}';
     /**
      * @var array button rendering callbacks. The array keys are the button names (without curly brackets),
      * and the values are the corresponding button rendering callbacks. The callbacks should use the following
@@ -145,7 +145,7 @@ class ActionColumn extends Column
                     'title' => Yii::t('yii', 'View'),
                     'aria-label' => Yii::t('yii', 'View'),
                     'data-pjax' => '0',
-                ], $this->buttonOptions);
+                ], ['class' => 'btn btn-info btn-simple btn-xs']);
                 return Html::a('<i class="material-icons">remove_red_eye</i>', $url, $options);
             };
         }
@@ -155,7 +155,7 @@ class ActionColumn extends Column
                     'title' => Yii::t('yii', 'Update'),
                     'aria-label' => Yii::t('yii', 'Update'),
                     'data-pjax' => '0',
-                ], $this->buttonOptions);
+                ], ['class' => 'btn btn-warning btn-simple btn-xs']);
                 return Html::a('<i class="material-icons">edit</i>', $url, $options);
             };
         }
@@ -167,7 +167,7 @@ class ActionColumn extends Column
                     'data-confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
                     'data-method' => 'post',
                     'data-pjax' => '0',
-                ], $this->buttonOptions);
+                ], ['class' => 'btn btn-danger btn-simple btn-xs']);
                 return Html::a('<i class="material-icons">delete</i>', $url, $options);
             };
         }
