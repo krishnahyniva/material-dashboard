@@ -41,7 +41,7 @@ class ActionColumn extends Column
     /**
      * @inheritdoc
      */
-    public $contentOptions = ['class' => 'td-actions text-right'];
+    public $contentOptions = ['class' => 'td-actions text-center'];
     /**
      * @var string the ID of the controller that should handle the actions specified here.
      * If not set, it will use the currently active controller. This property is mainly used by
